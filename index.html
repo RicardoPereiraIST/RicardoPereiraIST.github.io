@@ -261,11 +261,11 @@ td {
               </div>
 
               <!-- Left and right controls -->
-              <a class="left carousel-control" href="#carousel-Opengl" data-slide="prev">
+              <a class="left carousel-control" href="#carousel-Opengl" data-slide="prev" onclick="pauseVideo()">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="right carousel-control" href="#carousel-Opengl" data-slide="next">
+              <a class="right carousel-control" href="#carousel-Opengl" data-slide="next" onclick="pauseVideo()">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -324,7 +324,7 @@ td {
                 <div class="item">
                   <img src="./Images/Snooker/post_processing_sepia_2.png" alt="Sepia Post-Processing" style="width:100%;">
                 </div>
-                <div class="item">
+                <div class="item" id="video">
                   <video width="100%" height="100%" controls poster="./Images/Snooker/followup_shot_2.png" style="object-fit: fill;">
                     <source src="./Videos/Snooker/demo.mp4" type="video/mp4" alt="Snooker demo">
                     Your browser does not support the video tag.
@@ -333,11 +333,11 @@ td {
               </div>
 
               <!-- Left and right controls -->
-              <a class="left carousel-control" href="#carousel-Snooker" data-slide="prev" style="height:90%;">
+              <a class="left carousel-control" href="#carousel-Snooker" data-slide="prev" style="height:90%;" onclick="pauseVideo()">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="right carousel-control" href="#carousel-Snooker" data-slide="next" style="height:90%;">
+              <a class="right carousel-control" href="#carousel-Snooker" data-slide="next" style="height:90%;" onclick="pauseVideo()">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -402,7 +402,7 @@ td {
                   <img src="./Images/Shhh/snapshot_7.png" alt="Stun" style="width:100%;">
                 </div>
 
-                <div class="item">
+                <div class="item" id="video">
                   <video width="100%" height="100%" controls poster="./Images/Shhh/snapshot_1.png" style="object-fit: fill;">
                     <source src="./Videos/Shhh/demo.mp4" type="video/mp4" alt="Shhh demo">
                     Your browser does not support the video tag.
@@ -411,11 +411,11 @@ td {
               </div>
 
               <!-- Left and right controls -->
-              <a class="left carousel-control" href="#carousel-Shhh" data-slide="prev" style="height:90%;">
+              <a class="left carousel-control" href="#carousel-Shhh" data-slide="prev" style="height:90%;" onclick="pauseVideo()">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="right carousel-control" href="#carousel-Shhh" data-slide="next" style="height:90%;">
+              <a class="right carousel-control" href="#carousel-Shhh" data-slide="next" style="height:90%;" onclick="pauseVideo()">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -480,7 +480,7 @@ td {
                   <img src="./Images/Blackhole/grav_inversion_4.png" alt="Inverted gravity" style="width:100%;">
                 </div>
 
-                <div class="item">
+                <div class="item" id="video">
                   <video width="100%" height="100%" controls poster="./Images/Blackhole/cave_1.png" style="object-fit: fill;">
                     <source src="./Videos/Blackhole/black_hole_trailer.mp4" type="video/mp4" alt="Black hole demo">
                     Your browser does not support the video tag.
@@ -489,11 +489,11 @@ td {
               </div>
 
               <!-- Left and right controls -->
-              <a class="left carousel-control" href="#carousel-Black_hole" data-slide="prev" style="height:90%;">
+              <a class="left carousel-control" href="#carousel-Black_hole" data-slide="prev" style="height:90%;" onclick="pauseVideo()">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="right carousel-control" href="#carousel-Black_hole" data-slide="next" style="height:90%;">
+              <a class="right carousel-control" href="#carousel-Black_hole" data-slide="next" style="height:90%;" onclick="pauseVideo()">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -568,7 +568,7 @@ td {
                   <img src="./Images/Circumference/shield_phase.PNG" alt="Shield phase" style="width:100%;">
                 </div>
 
-                <div class="item">
+                <div class="item" id="video">
                   <video width="100%" height="100%" controls poster="./Images/Circumference/mirror_powerup.PNG" style="object-fit: fill;">
                     <source src="./Videos/Circumference/circumference_demo.mp4" type="video/mp4" alt="Circumference demo">
                     Your browser does not support the video tag.
@@ -577,11 +577,11 @@ td {
               </div>
 
               <!-- Left and right controls -->
-              <a class="left carousel-control" href="#carousel-Circumference" data-slide="prev" style="height:90%;">
+              <a class="left carousel-control" href="#carousel-Circumference" data-slide="prev" style="height:90%;" onclick="pauseVideo()">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="right carousel-control" href="#carousel-Circumference" data-slide="next" style="height:90%;">
+              <a class="right carousel-control" href="#carousel-Circumference" data-slide="next" style="height:90%;" onclick="pauseVideo()">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -600,10 +600,11 @@ td {
 var timer = 30000;
 var projectIndex = 0;
 var hovered = false;
+var playingVideo = false;
 
 showDivsProjects(projectIndex);
 injectButtons();
-if(!isMobileDevice())
+if(!isMobileDevice() && !playingVideo)
   var interval = setInterval(startTimer, timer);
 
 function plusDivsProjects(n) {
@@ -624,6 +625,8 @@ function showDivsProjects(n) {
      x[i].style.display = "none";  
   }
   x[projectIndex].style.display = "block";
+
+  pauseVideo();
 }
 
 function injectButtons(){
@@ -641,7 +644,7 @@ function restartStartTime(){
 }
 
 function sethover(hover){
-  if(!isMobileDevice()){
+  if(!isMobileDevice() && !playingVideo){
     hovered = hover;
     if(hovered)
       clearInterval(interval);
@@ -659,6 +662,26 @@ function isMobileDevice() {
     return ('ontouchstart' in window || navigator.msMaxTouchPoints);
     //(typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1) || (window.innerWidth <= 800 && window.innerHeight <= 600) || ('ontouchstart' in window || navigator.msMaxTouchPoints);
 };
+
+$('video').on('play', function () {
+    $("#carousel-Snooker").carousel('pause');
+    $("#carousel-Shhh").carousel('pause');
+    $("#carousel-Black_hole").carousel('pause');
+    $("#carousel-Circumference").carousel('pause');
+    playingVideo = true;
+});
+
+$('video').on('stop pause ended', function () {
+    $("#carousel-Snooker").carousel();
+    $("#carousel-Shhh").carousel();
+    $("#carousel-Black_hole").carousel();
+    $("#carousel-Circumference").carousel();
+    playingVideo = false;
+});
+
+function pauseVideo(){
+  $('video').trigger('pause');
+}
 
 </script>
 

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+html,body,h1,h2,h3,h4,h5,h6,p {font-family: "Helvetica", "Arial", sans-serif; color: grey;}
+section { margin-top: 7%;}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td {
+    text-align: left;
+}
+
+.carousel-video { margin-bottom:5%; }
+.myProjects { display: none; }
+
+#proficiency span {
+  display: none;
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0,0,0,0);
+  height:30px;
+  width:290px;
+  transform: translate(3%, -60%);
+}
+
+#proficiency:hover span {
+  display: block
+}
+
+</style>
+
+<body class="w3-black" style="margin-bottom:10%;">
+
+<div class="container" style="margin-top: 3%;">
+  <div class="col-sm-4">
+
+    <!-- Photo and first column -->
+
+    <div class="row col-sm-12">
+      <img src="./Photos/Ricardo_Pereira.jpg" style="width:100%;" alt="Avatar">
+      <h2 align="center">Ricardo Pereira</h2>
+      <section>
+        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer Graphics and Game Development</p>
+        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Lisbon, Portugal</p>
+      </section>
+      <hr>
+
+      <!-- Work Experience -->
+      
+      <p class="w3-large"><b><i class="w3-large fa fa-suitcase fa-fw w3-margin-right w3-text-teal"></i>Work Experience</b></p>
+      <section>
+        <h5 class="w3-text-teal" ><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - Oct 2015</h5>
+        <p>Summer Internship in Software Development at Miniclip</p>
+      </section>
+      <hr>
+
+      <!-- Education -->
+
+      <p class="w3-large"><b><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-text-teal"></i>Education</b></p>
+      <section>
+        <h5 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - Present</h5>
+        <p>Master in Computer Engineering and Information Systems</p>
+        <section>
+          <h6>Specialization: Games and Cyber-Security</h6>
+          <h6>Thesis (WIP): Expressing Emotions Through Kinetic Typography</h6>
+        </section>
+        <section>
+          <h5 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2016</h5>
+          <p>Bachelor in Computer Engineering and Information Systems</p>
+        </section>
+      </section>
+      <hr>
+
+      <!-- Hobbies -->
+
+      <p class="w3-large"><b><i class="fa fa-coffee fa-fw w3-margin-right w3-text-teal"></i>Hobbies</b></p>
+      <section>
+        <table>
+          <tr>
+            <td><p><i class="w3-text-teal fa fa-gamepad fa-fw w3-margin-right" style="margin-bottom: 6%;"></i>Games</p></td>
+            <td><p><i class="w3-text-teal fa fa-shield fa-fw w3-margin-right" style="margin-bottom: 6%;"></i>Security CTFs</p></td>
+          </tr>
+          <tr>
+            <td><p><i class="w3-text-teal fa fa-tv fa-fw w3-margin-right" style="margin-bottom: 6%;"></i>TV Shows</p></td>
+            <td><p><i class="w3-text-teal fa fa-music fa-fw w3-margin-right" style="margin-bottom: 6%;"></i>Music</p></td>
+          </tr>
+          <tr>
+            <td><p><i class="w3-text-teal fa fa-plane fa-fw w3-margin-right" style="margin-bottom: 6%;"></i>Travel</p></td>
+          </tr>
+        </table>
+      </section>
+      <hr>
+
+      <!-- Links -->
+
+      <p class="w3-large"><b><i class="w3-large fa fa-suitcase fa-fw w3-margin-right w3-text-teal"></i>Links</b></p>
+      <section>
+        <table>
+          <tr>
+            <td>
+              <a href="./CV/curriculum-vitae_web.pdf"><img src="./Icons/cv_white.png" alt="CV" width="70" style="float: left; margin-left:20%; margin-bottom: 10%; min-width:40%;"></a>
+            </td>
+            <td>
+              <a href="https://globalgamejam.org/users/cart"><img src="./Icons/ggj.png" alt="Global Game Jam" width="70" style="float: left; margin-bottom: 10%; min-width:40%;"></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://github.com/RicardoPereiraIST"><img src="./Icons/github_teal.png" alt="Github" width="70" style="float: left; margin-left:20%; margin-bottom: 10%; min-width:40%;"></a>
+            </td>
+            <td>
+              <a href="https://www.linkedin.com/in/ricardo-pereira-aa5542116/"><img src="./Icons/linkedin.png" alt="Linkedin" width="70" style="float: left; margin-bottom: 10%; min-width:40%;"></a>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <hr>
+
+      <!-- Skills -->
+
+      <p class="w3-large"><b><i class="w3-large fa fa-suitcase fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+      <section>
+        <table style="margin-left: 5%;">
+          <tr>
+            <td>
+              <img src="./Icons/c_crop.png" alt="C" width="70" style="float: left; margin-bottom: 10%; min-width:30%;">
+            </td>
+            <td>
+              <img src="./Icons/c_sharp_crop.png" alt="C#" width="70" style="float: left; margin-bottom: 10%; min-width:30%;">
+            </td>
+            <td>
+              <img src="./Icons/c_plus_plus_crop.png" alt="C++" width="70" style="float: left; margin-bottom: 10%; margin-top: -1%; min-width:30%;">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./Icons/python_crop.png" alt="Python" width="80" style="float: left; margin-bottom: 10%; min-width:40%;">
+            </td>
+            <td>
+              <img src="./Icons/java_crop.png" alt="Java" width="80" style="float: left; margin-bottom: 10%; min-width:40%;">
+            </td>
+            <td>
+              <img src="./Icons/gamemaker_crop.png" alt="GameMaker" width="80" style="float: left; margin-bottom: 10%; min-width:40%;">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./Icons/unity_logo_crop.png" alt="Unity" width="80" style="float: left; margin-bottom: 10%; min-width:40%;">
+            </td>
+            <td>
+              <img src="./Icons/opengl.png" alt="OpenGL" width="80" style="float: left; margin-bottom: 10%; min-width:40%;">
+            </td>
+          </tr>
+        </table>
+      </section>
+      <hr>
+
+      <!-- Languages -->
+
+      <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+      <section>
+        <table style="margin-left: 6%;">
+          <tr>
+            <td>
+              <b id="proficiency"><span style="color:teal">Native</span><img src="./Icons/portuguese_flag.png" alt="Portuguese" width="100" height="100" style="float: left; margin-right: 12%;"></b>
+            </td>
+            <td>
+              <b id="proficiency"><span style="color:teal">B2-C1</span><img src="./Icons/england_flag.png" alt="English" width="100" height="100" style="float: left;"></b>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <hr>
+
+    </div>
+  </div>
+
+  <!-- Projects -->
+
+  <div class="col-sm-8" onmouseover=sethover(true) onmouseout=sethover(false)>
+    <div class="row col-sm-12">
+      <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-folder-open fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Portfolio</h2>
+    </div>
+
+    <!-- OpenGL -->
+
+    <div class="row col-sm-12">
+      <div class="myProjects w3-animate-opacity w3-center">
+        <div class="row col-12 title">
+          <div class="col-sm-8 projectName">
+            <h1><a class="w3-text-grey w3-hover-text-teal" href="https://github.com/RicardoPereiraIST/OpenGL-Tutorials"><u>OpenGL Tutorials</u></a></h1>
+            <div class="row col-12">
+              <div class="col-sm-12">
+                <h1></h1><br><br>
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(0)" class="active"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(1)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(2)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(3)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(4)"></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row col-sm-12">
+          <div>
+            <p align="left">Multiple applications written in C++ and OpenGL.<br>
+              The applications go from the very basics of OpenGL and GLSL, to implement multiple techniques like, but not limited to, lightning models, shadows, particle systems, SSAO, and PBR. It also contains a version of the game Breakout.<br>
+            </p>
+            <p align="left">Based on Joey de Vries OpenGL <a class="w3-text-grey w3-hover-text-teal" href="https://learnopengl.com/"><u>tutorials</u></a>.</p>
+          </div>
+          <section style="width:100%;">
+            <div id="carousel-Opengl" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-Opengl" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-Opengl" data-slide-to="1"></li>
+                <li data-target="#carousel-Opengl" data-slide-to="2"></li>
+                <li data-target="#carousel-Opengl" data-slide-to="3"></li>
+                <li data-target="#carousel-Opengl" data-slide-to="4"></li>
+                <li data-target="#carousel-Opengl" data-slide-to="5"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="./Images/OpenGL_tutorials/model.png" alt="Model" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="./Images/OpenGL_tutorials/pbr_textures.png" alt="PBR textures" style="width:100%;">
+                </div>
+              
+                <div class="item">
+                  <img src="./Images/OpenGL_tutorials/chaos.png" alt="Breakout chaos mode" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="./Images/OpenGL_tutorials/instancing.png" alt="Instancing" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="./Images/OpenGL_tutorials/deferred_shading.png" alt="Deferred Shading" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="./Images/OpenGL_tutorials/ssao.png" alt="SSAO" style="width:100%;">
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#carousel-Opengl" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-Opengl" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Snooker -->
+
+      <div class="myProjects w3-animate-opacity w3-center">
+        <div class="row col-12 title">
+          <div class="col-sm-8 projectName">
+            <h1><a class="w3-text-grey w3-hover-text-teal" href="https://github.com/RicardoPereiraIST/rimachi-engine"><u>Snooker On Fire</u></a></h1>
+            <div class="row col-12">
+              <div class="col-sm-12">
+                <h1></h1><br><br>
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(0)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(1)" class="active"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(2)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(3)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(4)"></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row col-sm-12">
+          <div>
+            <p align="left">A snooker simulation application developed in a game engine written in C++ and OpenGL for the Computer Graphics course.<br>
+                Using a basic physics engine, lighting model, animations, textures, snapshot saving, and post-processing, the main concept of this project is to provide a semi-realistic simulation of a billiards (we know) game, with a table, balls and a cue (scoring was not implemented).<br>
+            </p>
+            <p align="left">Project done by Marcelo Silva, Ricardo Pereira, Ricardo Silva and Vinícius Zuchi.</p>
+          </div>
+          <section style="width:100%;">
+            <div id="carousel-Snooker" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators carousel-video">
+                <li data-target="#carousel-Snooker" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-Snooker" data-slide-to="1"></li>
+                <li data-target="#carousel-Snooker" data-slide-to="2"></li>
+                <li data-target="#carousel-Snooker" data-slide-to="3"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="./Images/Snooker/opening_shot_1.png" alt="Opening Shot" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="./Images/Snooker/followup_shot_2.png" alt="Follow up Shot" style="width:100%;">
+                </div>
+              
+                <div class="item">
+                  <img src="./Images/Snooker/post_processing_sepia_2.png" alt="Sepia Post-Processing" style="width:100%;">
+                </div>
+                <div class="item">
+                  <video width="100%" height="100%" controls poster="./Images/Snooker/followup_shot_2.png" style="object-fit: fill;">
+                    <source src="./Videos/Snooker/demo.mp4" type="video/mp4" alt="Snooker demo">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#carousel-Snooker" data-slide="prev" style="height:90%;">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-Snooker" data-slide="next" style="height:90%;">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+          </section>
+        </div>
+      </div>
+
+      <!-- Shhh -->
+
+      <div class="myProjects w3-animate-opacity w3-center">
+        <div class="row col-12 title">
+          <div class="col-sm-8 projectName">
+            <h1>Shhh</h1>
+            <div class="row col-12">
+              <div class="col-sm-12">
+                <h1></h1><br><br>
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(0)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(1)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(2)" class="active"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(3)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(4)"></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row col-sm-12">
+          <div>
+            <p align="left">A game developed in Unity3D for the course of Game Development Methodology.<br> Shhh is an isometric stealth game, with minimalistic visuals, in which the player visibility is based on the amount of noise made. The main objective is to escape the strange place by avoiding multiple enemies, using multiple abilities and items.<br>
+            </p>
+            <p align="left">Project done by Marcelo Silva, Ricardo Pereira and Ricardo Silva.</p>
+          </div>
+          <section style="width:100%;">
+            <div id="carousel-Shhh" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators carousel-video">
+                <li data-target="#carousel-Shhh" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-Shhh" data-slide-to="1"></li>
+                <li data-target="#carousel-Shhh" data-slide-to="2"></li>
+                <li data-target="#carousel-Shhh" data-slide-to="3"></li>
+                <li data-target="#carousel-Shhh" data-slide-to="4"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="./Images/Shhh/poster.png" alt="Poster" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="./Images/Shhh/snapshot_1.png" alt="Beginning" style="width:100%;">
+                </div>
+              
+                <div class="item">
+                  <img src="./Images/Shhh/Silent_Enemy.png" alt="Silent Enemy" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="./Images/Shhh/snapshot_7.png" alt="Stun" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <video width="100%" height="100%" controls poster="./Images/Shhh/snapshot_1.png" style="object-fit: fill;">
+                    <source src="./Videos/Shhh/demo.mp4" type="video/mp4" alt="Shhh demo">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#carousel-Shhh" data-slide="prev" style="height:90%;">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-Shhh" data-slide="next" style="height:90%;">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+          </section>
+        </div>
+      </div>
+
+      <!-- Black Hole -->
+
+      <div class="myProjects w3-animate-opacity w3-center">
+        <div class="row col-12 title">
+          <div class="col-sm-8 projectName">
+            <h1>Black Hole</h1>
+            <div class="row col-12">
+              <div class="col-sm-12">
+                <h1></h1><br><br>
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(0)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(1)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(2)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(3)" class="active"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(4)"></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row col-sm-12">
+          <div>
+            <p align="left">A game developed in GameMaker for the course of Game Design.<br> Black Hole is a 2D platformer shooter/hack 'n' slash, with some puzzle elements added along the way. The game has a sci-fi theme, presenting different environments for each of the dimensions, making each one feel unique.
+            </p>
+            <p align="left">Project done by André Saraiva, Ricardo Pereira and Vinícius Zuchi.</p>
+          </div>
+          <section style="width:100%;">
+            <div id="carousel-Black_hole" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators carousel-video">
+                <li data-target="#carousel-Black_hole" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-Black_hole" data-slide-to="1"></li>
+                <li data-target="#carousel-Black_hole" data-slide-to="2"></li>
+                <li data-target="#carousel-Black_hole" data-slide-to="3"></li>
+                <li data-target="#carousel-Black_hole" data-slide-to="4"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="./Images/Blackhole/froggy_2.png" alt="Beggining" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="./Images/Blackhole/cave_1.png" style="width:100%;">
+                </div>
+              
+                <div class="item">
+                  <img src="./Images/Blackhole/cave_5.png" alt="Cave 2" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="./Images/Blackhole/grav_inversion_4.png" alt="Inverted gravity" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <video width="100%" height="100%" controls poster="./Images/Blackhole/cave_1.png" style="object-fit: fill;">
+                    <source src="./Videos/Blackhole/black_hole_trailer.mp4" type="video/mp4" alt="Black hole demo">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#carousel-Black_hole" data-slide="prev" style="height:90%;">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-Black_hole" data-slide="next" style="height:90%;">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+          </section>
+        </div>
+      </div>
+
+      <!-- Circumference -->
+
+      <div class="myProjects w3-animate-opacity w3-center">
+        <div class="row col-12 title">
+          <div class="col-sm-8 projectName">
+            <h1><a class="w3-text-grey w3-hover-text-teal" href="https://bitbucket.org/nocluepy/pygame"><u>Circumference</u></a></h1>
+            <div class="row col-12">
+              <div class="col-sm-12">
+                <h1></h1><br><br>
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(0)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(1)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(2)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(3)"></li>
+                  <li data-target="#carousel-Projects" onclick="currentProjectDiv(4)" class="active"></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row col-sm-12">
+          <div>
+            <p align="left">A game developed in python (with pygame) for a contest hosted in Instituto Superior Técnico.<br> Circumference is a 2D arcade game programmed and designed within 10 days. Each level has 4 phases, and becomes faster with time. The objective is to get the best score before the time ends. There are multiple powerups (and power downs) for the player to get.
+            </p>
+            <p align="left">Project done by Manuel Silva and Ricardo Pereira.</p>
+          </div>
+          <section style="width:100%;">
+            <div id="carousel-Circumference" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators carousel-video">
+                <li data-target="#carousel-Circumference" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-Circumference" data-slide-to="1"></li>
+                <li data-target="#carousel-Circumference" data-slide-to="2"></li>
+                <li data-target="#carousel-Circumference" data-slide-to="3"></li>
+                <li data-target="#carousel-Circumference" data-slide-to="4"></li>
+                <li data-target="#carousel-Circumference" data-slide-to="6"></li>
+                <li data-target="#carousel-Circumference" data-slide-to="7"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="./Images/Circumference/circumference.png" alt="Menu" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="./Images/Circumference/initial_phase.png" alt="Initial phase" style="width:100%;">
+                </div>
+              
+                <div class="item">
+                  <img src="./Images/Circumference/fast_spawn_phase.png" alt="Fast spawn phase" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="./Images/Circumference/radar_phase.png" alt="Radar phase" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="./Images/Circumference/mirror_powerup.png" alt="Mirror powerup" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="./Images/Circumference/shield_phase.png" alt="Shield phase" style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <video width="100%" height="100%" controls poster="./Images/Circumference/mirror_powerup.png" style="object-fit: fill;">
+                    <source src="./Videos/Circumference/circumference_demo.mp4" type="video/mp4" alt="Circumference demo">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#carousel-Circumference" data-slide="prev" style="height:90%;">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-Circumference" data-slide="next" style="height:90%;">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+          </section>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+
+var timer = 30000;
+var projectIndex = 0;
+var hovered = false;
+
+showDivsProjects(projectIndex);
+injectButtons();
+if(!isMobileDevice())
+  var interval = setInterval(startTimer, timer);
+
+function plusDivsProjects(n) {
+  showDivsProjects(projectIndex += n);
+}
+
+function currentProjectDiv(n) {
+  projectIndex = n;
+  showDivsProjects(projectIndex);
+}
+
+function showDivsProjects(n) {
+  var i;
+  var x = document.getElementsByClassName("myProjects");
+  if (n > x.length - 1) {projectIndex = 0}    
+  if (n < 0) {projectIndex = x.length - 1}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[projectIndex].style.display = "block";
+}
+
+function injectButtons(){
+  var previousButton = "<div class=\"col-sm-2\" style=\"margin-top:2.5%;\"><div onclick=\"plusDivsProjects(-1)\"><i class=\"w3-xxxlarge fa fa-arrow-circle-left w3-text-white w3-hover-text-teal\"></i></div></div>";
+  var nextButton = "<div class=\"col-sm-2\" style=\"margin-top:2.5%; margin-bottom:10%;\"><div onclick=\"plusDivsProjects(1)\"><i class=\"w3-xxxlarge fa fa-arrow-circle-right w3-hover-text-teal\"></i></div></div>"
+
+  var title = document.getElementsByClassName("title");
+  for(i = 0; i < title.length; i++){
+    title[i].innerHTML = previousButton + title[i].innerHTML + nextButton;
+  }
+}
+
+function restartStartTime(){
+  timerStart = Date.now();
+}
+
+function sethover(hover){
+  if(!isMobileDevice()){
+    hovered = hover;
+    if(hovered)
+      clearInterval(interval);
+    else
+      interval = setInterval(startTimer, timer);
+  }
+}
+
+function startTimer() {
+  plusDivsProjects(1);
+  timerStart = Date.now();
+}
+
+function isMobileDevice() {
+    return ('ontouchstart' in window || navigator.msMaxTouchPoints);
+    //(typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1) || (window.innerWidth <= 800 && window.innerHeight <= 600) || ('ontouchstart' in window || navigator.msMaxTouchPoints);
+};
+
+</script>
+
+</body>
+</html>

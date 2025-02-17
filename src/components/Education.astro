@@ -1,0 +1,34 @@
+---
+const { education } = Astro.props;
+---
+
+<head>
+    <link rel="stylesheet" href="/css/education.css">
+</head>
+
+<div>
+    <h2 style="text-align: center;">Education</h2>
+    <div class="cv-entry">
+        {education.map(institution => (
+            <div>
+                <h2 class="company">{institution.name}</h2>
+                {institution.degrees.map(degree => (
+                    <div>
+                        <div class="header">
+                            <p class="role">{degree.name}</p>
+                            <p class="date">{degree.date}</p>
+                        </div>
+                        <p class="specialization">{degree.specialization}</p>
+                        <ul class="description">
+                            <div>
+                                {degree.description?.map(description => (
+                                    <li>{description.text}</li>
+                                ))}
+                            </div>
+                        </ul>
+                    </div>
+                ))}
+            </div>
+        ))}
+    </div>
+</div>

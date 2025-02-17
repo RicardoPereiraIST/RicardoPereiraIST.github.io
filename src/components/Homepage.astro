@@ -1,0 +1,16 @@
+---
+const { credits } = Astro.props;
+---
+
+<head>
+    <link rel="stylesheet" href="/css/credits.css">
+</head>
+
+<div>
+    <h2 class="credits-title">Professional Projects</h2>
+    <div class="credits-container">
+        {credits.map(item => (
+            <a class="image-url" href={item.url} target="_blank"><img class="logo" src={item.image}/></a>
+        ))}
+    </div>
+</div>

@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import DefaultLeft from '../components/defaultLeft.astro';
+import Carousel from '../components/Carousel.astro';
+
+import { personalInfo } from "../data/personalInfo.ts";
+import { projects } from "../data/projects.ts";
+---
+
+<BaseLayout>
+    <div slot="left">
+        {<DefaultLeft personalInfo={personalInfo}/>}
+    </div>
+
+    <div slot="right">
+        <Carousel projects={projects}/>
+    </div>
+</BaseLayout>

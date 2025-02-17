@@ -1,0 +1,26 @@
+---
+const { publications } = Astro.props;
+---
+
+<div>
+    <h2 style="text-align: center;">Publications</h2>
+    <div class="cv-entry">
+        {publications.map(publication => (
+            <div>
+                <h2 class="company">{publication.name}</h2>
+                {publication.papers.map(paper => (
+                    <div>
+                        <div class="header">
+                            <ul class="description">
+                                <li class="entry">
+                                    <a href={paper.url} target="_blank"><p>{paper.name}</p></a>
+                                    <p class="date">{paper.date}</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        ))}
+    </div>
+</div>

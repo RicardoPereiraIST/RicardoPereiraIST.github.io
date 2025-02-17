@@ -1,0 +1,21 @@
+* {
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: grey;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.separator {
+    border: none;
+    border-top: 0.1vh solid #eeeeee;
+    margin: 1vh 0;
+}
+
+.icon {
+    color: teal;
+    margin-right: 5%; 
+}
+

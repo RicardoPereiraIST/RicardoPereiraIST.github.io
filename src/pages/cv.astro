@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import DefaultLeft from '../components/defaultLeft.astro';
+import WorkExperience from '../components/WorkExperience.astro';
+import Education from '../components/Education.astro';
+import Publications from '../components/Publications.astro';
+
+import { personalInfo } from "../data/personalInfo.ts";
+import { workExperience } from "../data/work.ts";
+---
+
+<head>
+    <link rel="stylesheet" href="/css/cv.css">
+</head>
+
+<BaseLayout>
+    <div slot="left">
+        {<DefaultLeft personalInfo={personalInfo}/>}
+    </div>
+
+    <div slot="right">
+        <WorkExperience companies={workExperience.companies}/>
+        <hr class="separator">
+        <Education education={workExperience.education}/>
+        <hr class="separator">
+        <Publications publications={workExperience.publications}/>
+    </div>
+</BaseLayout>

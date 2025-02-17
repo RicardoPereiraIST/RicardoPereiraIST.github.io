@@ -1,0 +1,40 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="buttons_container">
+                <div class="buttons">
+                    <a href="/" class="btn">Home</a>
+                    <a href="/projects" class="btn">Projects</a>
+                    <a href="/cv" class="btn">CV</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="left">
+                <slot name="left" /> <!-- This slot allows left-side content to change per page -->
+            </section>
+            <section class="right">
+                <slot name="right" /> <!-- This slot allows right-side content to change per page -->
+            </section>
+        </main>
+
+        <footer>
+            <p>© {currentYear} My Portfolio. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

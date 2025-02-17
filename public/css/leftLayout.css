@@ -1,0 +1,52 @@
+.profile-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5vh;
+    object-fit: cover;
+}
+
+.name {
+    text-align: center;
+    
+    font-weight: 500;
+    margin: 0.9vh 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    margin-top: -1vh;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.languages {
+    list-style: none;
+    padding: 0;
+}
+
+.languages li {
+    margin: 0.5vh 0;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-image {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .name {
+        margin-top: 1vh;
+    }
+
+    .icons {
+        gap: 1.5vw;
+    }
+
+    .left {
+        padding-left: 2vw;
+        width: 100%;
+    }
+}

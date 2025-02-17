@@ -1,0 +1,40 @@
+---
+const { personalInfo } = Astro.props;
+---
+
+<head>
+    <link rel="stylesheet" href="/css/leftLayout.css">
+</head>
+
+<div>
+    <div>
+        <div>
+            <img src={personalInfo.setup.picture} class="profile-image">
+            <h2 class="name">{personalInfo.setup.name}</h2>
+            <div class="icons">
+                {personalInfo.setup.links.map(item => (
+                    <a href={item.url} target="_blank"><i class=`fa ${item.icon} icon`></i></a>
+                ))}
+            </div>
+            <div>
+                {personalInfo.setup.info.map(item => (
+                    <p><i class=`fa ${item.icon} icon`></i>{item.text}</p>
+                ))}
+            </div>
+        </div>
+        <div>
+            <hr class="separator">
+            <p><i class=`fa ${personalInfo.about.title.icon} icon`></i></i><b>{personalInfo.about.title.text}</b></p>
+            <div set:html={personalInfo.about.information}></div>
+        </div>
+        <div>
+            <hr class="separator">
+            <p><i class=`fa ${personalInfo.languages.title.icon} icon`></i></i><b>{personalInfo.languages.title.text}</b></p>
+            <ul class="languages">
+                {personalInfo.languages.information.map(item => (
+                    <li><i class="icon">{item.flag}</i>{item.text}</li>
+                ))}
+            </ul>
+        </div>
+    </div>
+</div>

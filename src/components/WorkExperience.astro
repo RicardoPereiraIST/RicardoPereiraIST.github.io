@@ -1,0 +1,29 @@
+---
+const { companies } = Astro.props;
+---
+
+<div>
+    <h2 style="text-align: center;">Work Experience</h2>
+    <div class="cv-entry">
+        {companies.map(company => (
+            <div>
+                <h2 class="company">{company.name}</h2>
+                {company.positions.map(position => (
+                    <div>
+                        <div class="header">
+                            <p class="role">{position.role}</p>
+                            <p class="date">{position.date}</p>
+                        </div>
+                        <ul class="description">
+                            <div>
+                                {position.description.map(description => (
+                                    <li>{description.text}</li>
+                                ))}
+                            </div>
+                        </ul>
+                    </div>
+                ))}
+            </div>
+        ))}
+    </div>
+</div>

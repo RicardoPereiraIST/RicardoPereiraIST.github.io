@@ -1,0 +1,25 @@
+---
+import ProjectSlider from '../components/ProjectSlider.astro';
+const { projects } = Astro.props;
+---
+
+<head>
+    <link rel="stylesheet" href="/css/carousel.css">
+</head>
+
+<div class="swiper-container parent-slider">
+    <h2 class="projects-title">Personal Projects</h2>
+    <div class="swiper-wrapper">
+        {Object.keys(projects).map(key => (
+            <div class="swiper-slide">
+                <ProjectSlider project={projects[key]}/>
+            </div>
+        ))}
+    </div>
+    <div class="swiper-pagination swiper-pagination-parent"></div>
+</div>
+
+<script>
+    import { setupCarousel } from "../scripts/carouselSetup.ts";
+    setupCarousel();
+</script>

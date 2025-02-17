@@ -1,0 +1,63 @@
+.cv-entry {
+    margin-bottom: 2vh;
+}
+
+.cv-entry .company {
+    color: teal;
+    margin-top: 5%;
+}
+
+.cv-entry .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+}
+
+.cv-entry .header h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.cv-entry .header .role {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-right: 1.1vw;
+}
+
+.cv-entry .header .date {
+    font-size: 1rem;
+    margin-left: auto;
+}
+
+.cv-entry .description {
+    margin-top: -0.5vh;
+    list-style-type: none;
+    padding-left: 1vw;
+    font-size: 1rem;
+}
+
+.cv-entry .description li {
+    margin-bottom: 0.5vh;
+}
+
+.cv-entry .description li:before {
+    content: "•";
+    color: teal;
+    margin-right: 0.5vw;
+}
+
+.cv-entry .header .description {
+    width: 100%;
+}
+
+.cv-entry .header .description .entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -2vh;
+}
+
+.cv-entry .header .description .entry .date {
+    margin-left: auto;
+}

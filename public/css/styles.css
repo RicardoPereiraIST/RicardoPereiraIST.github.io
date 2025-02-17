@@ -16,6 +16,10 @@ body {
 
 .icon {
     color: teal;
-    margin-right: 5%; 
+    margin-right: 5%;
 }
 
+.small-icon {
+    margin-top: 0.5vh;
+    transform: scale(1.5);
+}

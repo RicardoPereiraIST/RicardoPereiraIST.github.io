@@ -5,10 +5,11 @@ const { projects } = Astro.props;
 
 <head>
     <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="stylesheet" href="/css/base.css">
 </head>
 
 <div class="swiper-container parent-slider">
-    <h2 class="projects-title">Personal Projects</h2>
+    <h2 class="projects-title">University Projects</h2>
     <div class="swiper-wrapper">
         {Object.keys(projects).map(key => (
             <div class="swiper-slide">

@@ -7,7 +7,7 @@ const { education } = Astro.props;
 </head>
 
 <div>
-    <h2 style="text-align: center;">Education</h2>
+    <h2 class="projects-title">Education</h2>
     <div class="cv-entry">
         {education.map(institution => (
             <div>
@@ -22,7 +22,7 @@ const { education } = Astro.props;
                         <ul class="description">
                             <div>
                                 {degree.description?.map(description => (
-                                    <li>{description.text}</li>
+                                    <li><a href={description?.url} target="_blank">{description.text}</a></li>
                                 ))}
                             </div>
                         </ul>

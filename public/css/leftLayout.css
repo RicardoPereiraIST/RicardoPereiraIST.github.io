@@ -16,10 +16,8 @@
 .icons {
     display: flex;
     justify-content: center;
-    gap: 1vw;
-    margin-top: -1vh;
+    gap: 1.5em;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .languages {
@@ -39,10 +37,6 @@
 
     .name {
         margin-top: 1vh;
-    }
-
-    .icons {
-        gap: 1.5vw;
     }
 
     .left {

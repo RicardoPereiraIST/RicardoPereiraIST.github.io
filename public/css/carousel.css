@@ -1,7 +1,3 @@
-.projects-title {
-    text-align: center;
-}
-
 .swiper-container {
     width: 100%;
     margin: 0 auto;
@@ -178,4 +174,25 @@
     height: auto;
     max-height: 53vh;
     object-fit: contain;
+}
+
+@media (max-width: 400px) {
+    .swiper-button-prev-child,
+    .swiper-button-next-child,
+    .swiper-button-prev-parent,
+    .swiper-button-next-parent {
+        font-size: clamp(0.1rem, 5vw, 1rem);
+    }
+
+    .swiper-pagination-child .swiper-pagination-bullet,
+    .swiper-pagination-parent .swiper-pagination-bullet {
+        width: clamp(0.1rem, 3vw, 1rem);
+        height: clamp(0.1rem, 3vw, 1rem);
+    }
+
+    .swiper-pagination-child .swiper-pagination-bullet-active,
+    .swiper-pagination-parent .swiper-pagination-bullet-active {
+        width: clamp(0.1rem, 3vw, 1rem);
+        height: clamp(0.1rem, 3vw, 1rem);        
+    }
 }

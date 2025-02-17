@@ -13,7 +13,7 @@ const { personalInfo } = Astro.props;
             <h2 class="name">{personalInfo.setup.name}</h2>
             <div class="icons">
                 {personalInfo.setup.links.map(item => (
-                    <a href={item.url} target="_blank"><i class=`fa ${item.icon} icon`></i></a>
+                    <a href={item.url} target="_blank"><i class=`fa ${item.icon} icon small-icon`></i></a>
                 ))}
             </div>
             <div>

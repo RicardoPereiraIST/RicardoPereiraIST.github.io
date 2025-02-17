@@ -58,6 +58,7 @@ export const workExperience = {
                     description: [
                         {
                             text: "Master's Thesis: Expressing Emotions Through Animated Speech Balloons",
+                            url: "https://fenix.tecnico.ulisboa.pt/cursos/meic-t/dissertacao/1972678479054259",
                         },                        
                     ],
                 },
@@ -79,7 +80,7 @@ export const workExperience = {
                 },
                 {
                     name: "Interactive Empathic Virtual Coaches Based on the Social Regulatory Cycle",
-                    date: "September 2029",
+                    date: "September 2019",
                     url: "https://www.researchgate.net/publication/338201315_Interactive_Empathic_Virtual_Coaches_Based_on_the_Social_Regulatory_Cycle",
                 },
             ],

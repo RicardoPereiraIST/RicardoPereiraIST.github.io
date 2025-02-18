@@ -21,7 +21,7 @@ const MoreInfoToggle = ({ position }) => {
             aria-label="Toggle description"
         >
             <span className="toggle-icon">
-                <i className={`fas ${isExpanded ? "fa-caret-right" : "fa-caret-down"} icon`}></i>
+                <i className={`fas ${isExpanded ? "fa-caret-down" : "fa-caret-right"} icon`}></i>
             </span>
             <p className="role">{position.role}</p>
             <p className="date">{position.date}</p>

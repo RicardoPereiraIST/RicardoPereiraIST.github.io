@@ -68,6 +68,17 @@ footer {
     padding: 1em;
 }
 
+@media (min-width: 3000px) {
+    .btn {
+        font-size: clamp(1rem, 10vw, 1.5em);
+    }
+
+    .left,
+    .right {
+        font-size: clamp(1rem, 10vw, 1.5em);
+    }
+}
+
 @media (max-width: 1200px) {
     main {
         flex-wrap: wrap;

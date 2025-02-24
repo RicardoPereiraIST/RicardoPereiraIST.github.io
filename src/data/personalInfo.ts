@@ -19,7 +19,7 @@ export const personalInfo = {
         info: [
             {
                 icon: "fa-briefcase",
-                text: "Systems Programmer",
+                text: "Senior Systems Programmer",
             },
             {
                 icon: "fa-home",

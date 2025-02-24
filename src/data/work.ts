@@ -4,8 +4,17 @@ export const workExperience = {
             name: "Crytek",
             positions: [
                 {
+                    role: "Senior Systems Programmer for Hunt: Showdown",
+                    date: "January 2025 - Present",
+                    description: [
+                        {text: "Maintained the game platform abstraction plugin: Xbox / PlayStation / Steam / Discord."},
+                        {text: "Maintained the game crash reporting system crash handler."},
+                        {text: "Maintained the game VoIP system."},
+                    ],
+                },
+                {
                     role: "Systems Programmer for Hunt: Showdown",
-                    date: "March 2021 - Present",
+                    date: "March 2021 - December 2024",
                     description: [
                         {text: "Maintained the game platform abstraction plugin: Xbox / PlayStation / Steam / Discord."},
                         {text: "Implemented lobbies, stream install, and save data on Xbox Series S/X and Playstation 5."},
